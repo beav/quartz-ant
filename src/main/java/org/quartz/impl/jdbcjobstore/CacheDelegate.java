@@ -26,7 +26,7 @@ import org.slf4j.Logger;
 
 /**
  * <p>
- * This is a driver delegate for Intersystems Caché database.
+ * This is a driver delegate for Intersystems Cache database.
  * </p>
  * 
  * <p>
