@@ -7,7 +7,7 @@ Name: quartz
 Summary: quartz lib
 Group: Internet/Applications
 License: Apache
-Version: 2.1.5
+Version: 2.1.6
 Release: 1%{?dist}
 URL: http://fill.me.in
 Source: %{name}-%{version}.tar.gz
@@ -48,3 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed May 23 2012 Chris Duryee (beav) <cduryee@redhat.com>
+- new package built with tito
+
