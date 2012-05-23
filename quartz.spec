@@ -8,7 +8,7 @@ Summary: quartz lib
 Group: Internet/Applications
 License: Apache
 Version: 2.1.5
-Release: 1{?dist}
+Release: 1%{?dist}
 URL: http://fill.me.in
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
