@@ -1,0 +1,30 @@
+----------------------------------------------------------------
+Fri Apr 27 13:17:22 PDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-0136-f573-66c0-0000019cb9a0 
+on database directory memory:/export1/cruise/tmp/quartz-2.1.5-release/work/quartz/tags/quartz-2.1.5/quartz/testBasicStorageFunctionsDatabase  with class loader sun.misc.Launcher$AppClassLoader@360be0 
+Loaded from file:/export1/cruise/.m2/repository/org/apache/derby/derby/10.8.1.2/derby-10.8.1.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_27-b07
+user.dir=/export1/cruise/tmp/quartz-2.1.5-release/work/quartz/tags/quartz-2.1.5/quartz
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Apr 27 13:17:26 PDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a770417f-0136-f573-66c0-0000019cb9a0 
+on database directory memory:/export1/cruise/tmp/quartz-2.1.5-release/work/quartz/tags/quartz-2.1.5/quartz/testShutdownWithSleepReturnsAfterAllThreadsAreStoppedDatabase  with class loader sun.misc.Launcher$AppClassLoader@360be0 
+Loaded from file:/export1/cruise/.m2/repository/org/apache/derby/derby/10.8.1.2/derby-10.8.1.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_27-b07
+user.dir=/export1/cruise/tmp/quartz-2.1.5-release/work/quartz/tags/quartz-2.1.5/quartz
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Apr 27 13:17:28 PDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance d13fc25b-0136-f573-66c0-0000019cb9a0 
+on database directory memory:/export1/cruise/tmp/quartz-2.1.5-release/work/quartz/tags/quartz-2.1.5/quartz/testAbilityToFireImmediatelyWhenStartedBeforeDatabase  with class loader sun.misc.Launcher$AppClassLoader@360be0 
+Loaded from file:/export1/cruise/.m2/repository/org/apache/derby/derby/10.8.1.2/derby-10.8.1.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_27-b07
+user.dir=/export1/cruise/tmp/quartz-2.1.5-release/work/quartz/tags/quartz-2.1.5/quartz
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

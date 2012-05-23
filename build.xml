@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<project name="quartz" default="package" basedir=".">
+    <description>
+        netty
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="build" location="build"/>
+  <property name="dist" location="dist"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init" description="compile the source ">
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}">
+    <!-- <exclude name="main/java/org/jboss/netty/container/**"/>
+    <exclude name="main/java/org/jboss/netty/example/**"/>
+    <exclude name="main/java/org/jboss/netty/handler/codec/protobuf/*"/>
+    <exclude name="main/java/org/jboss/netty/logging/CommonsLogger*"/>
+    <exclude name="main/java/org/jboss/netty/logging/JBossLogger*"/>
+    <exclude name="main/java/org/jboss/netty/logging/OsgiLogger*"/>
+    <exclude name="main/java/org/jboss/netty/logging/Slf4JLogger*"/> -->
+
+    <exclude name="test/**"/>
+
+      <classpath>
+        <fileset dir="/usr/share/java">
+          <include name="slf4j/api.jar"/>
+          <include name="c3p0.jar"/>
+          <include name="geronimo*.jar"/>
+        </fileset>
+      </classpath>
+     </javac>
+
+    </target>
+
+  <target name="package" depends="compile" description="generate the distribution">
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}/lib"/>
+
+    <jar jarfile="${dist}/lib/quartz-${version}.jar" basedir="${build}"/>
+  </target>
+
+  <target name="clean" description="clean up">
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>
