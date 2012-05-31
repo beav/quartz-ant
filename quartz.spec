@@ -9,7 +9,7 @@ License: ASL 2.0
 URL: http://www.quartz-scheduler.org/
 Group: Development/Libraries/Java
 Version: 2.1.5
-Release: 3%{?dist}
+Release: 4%{?dist}
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
@@ -56,6 +56,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu May 31 2012 Chris Duryee (beav) <cduryee@redhat.com>
+- better specfile description (cduryee@redhat.com)
+
 * Thu May 31 2012 Chris Duryee (beav) <cduryee@redhat.com>
 - add build deps (cduryee@redhat.com)
 
