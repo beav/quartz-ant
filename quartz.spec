@@ -8,7 +8,7 @@ Summary: quartz lib
 Group: Internet/Applications
 License: Apache
 Version: 2.1.5
-Release: 2%{?dist}
+Release: 3%{?dist}
 URL: http://fill.me.in
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -52,6 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu May 31 2012 Chris Duryee (beav) <cduryee@redhat.com>
+- add build deps (cduryee@redhat.com)
+
 * Wed May 23 2012 Chris Duryee (beav) <cduryee@redhat.com>
 - this char breaks rpm building (cduryee@redhat.com)
 
