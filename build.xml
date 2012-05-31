@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project name="quartz" default="package" basedir=".">
     <description>
-        netty
+        quartz
     </description>
   <!-- set global properties for this build -->
   <property name="src" location="src"/>
@@ -18,21 +18,18 @@
   <target name="compile" depends="init" description="compile the source ">
     <!-- Compile the java code from ${src} into ${build} -->
     <javac srcdir="${src}" destdir="${build}">
-    <!-- <exclude name="main/java/org/jboss/netty/container/**"/>
-    <exclude name="main/java/org/jboss/netty/example/**"/>
-    <exclude name="main/java/org/jboss/netty/handler/codec/protobuf/*"/>
-    <exclude name="main/java/org/jboss/netty/logging/CommonsLogger*"/>
-    <exclude name="main/java/org/jboss/netty/logging/JBossLogger*"/>
-    <exclude name="main/java/org/jboss/netty/logging/OsgiLogger*"/>
-    <exclude name="main/java/org/jboss/netty/logging/Slf4JLogger*"/> -->
 
     <exclude name="test/**"/>
 
       <classpath>
         <fileset dir="/usr/share/java">
-          <include name="slf4j/api.jar"/>
+          <include name="slf4j-api.jar"/>
           <include name="c3p0.jar"/>
-          <include name="geronimo*.jar"/>
+          <include name="geronimo/spec-jta-1.0.1B.jar"/>
+          <include name="geronimo/spec-ejb-2.1.jar"/>
+          <include name="geronimo/spec-jms-1.1.jar"/>
+          <include name="tomcat6-servlet-2.5-api.jar"/>
+          <include name="glassfish-javamail-monolithic.jar"/>
         </fileset>
       </classpath>
      </javac>

@@ -17,6 +17,10 @@ BuildArch: noarch
 BuildRequires: java >= 0:1.6.0
 BuildRequires: ant >= 0:1.7.0
 BuildRequires: tomcat6-servlet-2.5-api
+BuildRequires: glassfish-javamail
+BuildRequires: geronimo-specs
+BuildRequires: slf4j
+BuildRequires: c3p0
 BuildRequires: jakarta-commons-httpclient >= 3.1
 BuildRequires: log4j
 Requires: java >= 0:1.6.0
