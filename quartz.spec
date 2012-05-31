@@ -4,12 +4,12 @@
 %global _source_payload w9.gzdio
 
 Name: quartz
-Summary: quartz lib
-Group: Internet/Applications
-License: Apache
+Summary: Quartz Enterprise Job Scheduler
+License: ASL 2.0
+URL: http://www.quartz-scheduler.org/
+Group: Development/Libraries/Java
 Version: 2.1.5
 Release: 3%{?dist}
-URL: http://fill.me.in
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
@@ -27,7 +27,11 @@ Requires: java >= 0:1.6.0
 %define __jar_repack %{nil}
 
 %description
-quartz
+Quartz is a job scheduling system that can be integrated with, or used
+along side virtually any J2EE or J2SE application. Quartz can be used
+to create simple or complex schedules for executing tens, hundreds, or
+even tens-of-thousands of jobs; jobs whose tasks are defined as standard
+Java components or EJBs.
 
 %prep
 %setup -q
