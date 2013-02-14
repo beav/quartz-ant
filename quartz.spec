@@ -53,8 +53,9 @@ rm -rf $RPM_BUILD_ROOT
 # common
 install -d -m 755 $RPM_BUILD_ROOT/usr/share/java/
 ln -s /usr/share/java/quartz-%{version}.jar $RPM_BUILD_ROOT/usr/share/java/quartz.jar
-ln -s /usr/share/java/quartz-%{version}.jar $RPM_BUILD_ROOT/usr/share/java/quartz2.jar
 install -m 644 dist/lib/quartz-%{version}.jar $RPM_BUILD_ROOT/usr/share/java/
+install -m 644 dist/lib/quartz-%{version}.jar $RPM_BUILD_ROOT/usr/share/java/quartz2-%{version}.jar
+ln -s /usr/share/java/quartz2-%{version}.jar $RPM_BUILD_ROOT/usr/share/java/quartz2.jar
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -64,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/share/java/quartz.jar
 
 %files -n quartz2-candlepin
-/usr/share/java/quartz-%{version}.jar
+/usr/share/java/quartz2-%{version}.jar
 /usr/share/java/quartz2.jar
 
 
